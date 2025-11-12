@@ -1,2 +1,9 @@
 @import url('bootstrap');
 @import url('bootstrap-icons');
+
+.card_img {
+
+  img {
+    max-width: 100%;
+  }
+}

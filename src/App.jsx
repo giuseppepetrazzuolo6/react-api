@@ -26,11 +26,11 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="row">
-          <div className="col-3">
-            {
-              actress.map(item =>
-                <div className="card_actress" key={item.id}>
+        <div className="row g-3">
+          {
+            actress.map(item =>
+              <div className="col-12 col-md-6 col-lg-4" key={item.id}>
+                <div className="card_actress">
                   <div className="card_img">
                     <img src={item.image} alt="" />
                   </div>
@@ -41,9 +41,9 @@ function App() {
                     <p>{item.awards}</p>
                   </div>
                 </div>
-              )
-            }
-          </div>
+              </div>
+            )
+          }
         </div>
 
       </div>
