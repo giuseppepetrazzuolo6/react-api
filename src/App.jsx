@@ -40,7 +40,6 @@ function App() {
                     <p>{item.biography}</p>
                     <p>{item.awards}</p>
                   </div>
-                  <p></p>
                 </div>
               )
             }
