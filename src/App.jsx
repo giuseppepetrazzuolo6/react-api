@@ -25,7 +25,8 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <div className="container p-3">
+        <h1 className='text-center mb-4'>The best actresses in Hollywood</h1>
         <div className="row g-3">
           {
             actress.map(item =>
