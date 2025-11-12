@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [actress, setActress] = useState([])
-  //console.log(actress);
+  console.log(actress);
   const actressesApiUrl = 'https://lanciweb.github.io/demo/api/actresses/'
 
   function getActresses() {
@@ -25,7 +25,29 @@ function App() {
 
   return (
     <>
+      <div className="container">
+        <div className="row">
+          <div className="col-3">
+            {
+              actress.map(item =>
+                <div className="card_actress" key={item.id}>
+                  <div className="card_img">
+                    <img src={item.image} alt="" />
+                  </div>
+                  <div className="card_details">
+                    <h3>{item.name}</h3>
+                    <span>{item.birth_year} - {item.nationality}</span>
+                    <p>{item.biography}</p>
+                    <p>{item.awards}</p>
+                  </div>
+                  <p></p>
+                </div>
+              )
+            }
+          </div>
+        </div>
 
+      </div>
     </>
   )
 }
