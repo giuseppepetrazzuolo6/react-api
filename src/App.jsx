@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <div className="container p-3">
-        <h1 className='text-center mb-4'>The best actresses in Hollywood</h1>
+        <h1 className='text-center mb-4 text-warning'>The Best Actresses in Hollywood</h1>
         <div className="row g-3">
           {
             actress.map(item =>
@@ -35,10 +35,10 @@ function App() {
                   <div className="card_img">
                     <img src={item.image} alt="" />
                   </div>
-                  <div className="card_details">
-                    <h3>{item.name}</h3>
-                    <span>{item.birth_year} - {item.nationality}</span>
-                    <p>{item.biography}</p>
+                  <div className="card_details mt-2">
+                    <h3 className='mb-0'>{item.name}</h3>
+                    <span className='text-light'>{item.birth_year} - {item.nationality}</span>
+                    <p className='mt-3'>{item.biography}</p>
                     <p>{item.awards}</p>
                   </div>
                 </div>
